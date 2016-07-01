@@ -1,0 +1,22 @@
+{
+  "name": "cross-js-env-tests",
+  "version": "0.0.1",
+  "description": "A project to test some JS code amongst various JS environments",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Offirmo/cross-js-env-tests.git"
+  },
+  "author": "Offirmo <offirmo.net@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Offirmo/cross-js-env-tests/issues"
+  },
+  "homepage": "https://github.com/Offirmo/cross-js-env-tests#readme",
+  "dependencies": {
+    "prefixed-log": "0.0.3"
+  }
+}
