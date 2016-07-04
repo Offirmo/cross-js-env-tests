@@ -6,5 +6,5 @@ const makePrefixedLogger = require('prefixed-log')
 
 const logger = makePrefixedLogger('* [foo]')
 
-logger('Hello %d', 33)
+logger('Hello using version : "%s"', logger.__src)
 logger({foo: 'bar'})
