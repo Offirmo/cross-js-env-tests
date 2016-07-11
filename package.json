@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/Offirmo/cross-js-env-tests#readme",
   "dependencies": {
-    "prefixed-log": "^1.0.0"
+    "prefixed-log": "^1.0.0",
+    "requirejs": "^2.2.0"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
