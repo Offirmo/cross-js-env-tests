@@ -3,7 +3,17 @@
 
 import makePrefixedLogger from 'prefixed-log'
 
-const logger = makePrefixedLogger('* [foo]')
+const logger1 = makePrefixedLogger('* [foo]')
+const logger2 = makePrefixedLogger(() => `[${Date.now()}]`, {
+	spacer: ' > ',
+	spacerAlt: ' >'
+})
+const logger3 = makePrefixedLogger('!!!', console.error.bind(console), {
+	isEnabled: false
+})
 
-logger('Hello using version : "%s"', logger.__src)
-logger({foo: 'bar'})
+logger1('Hello using version : "%s"', logger1.__src)
+logger2('Hello again')
+logger1({foo: 'bar'})
+logger2([ 'foo', 'bar'])
+logger3('should not appear')

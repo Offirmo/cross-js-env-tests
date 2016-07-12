@@ -3,7 +3,7 @@
 
 import makePrefixedLogger from 'prefixed-log'
 
-const logger:Function = makePrefixedLogger('* [foo]')
+const logger = makePrefixedLogger('* [foo]')
 
 logger('Hello using version : "%s"', logger.__src)
 logger({foo: 'bar'})

@@ -4,7 +4,17 @@
 
 var makePrefixedLogger = require('prefixed-log')
 
-var logger = makePrefixedLogger('* [foo]')
+var logger1 = makePrefixedLogger('* [foo]')
+var logger2 = makePrefixedLogger(function foo() { return '[' + Date.now() + ']'}, {
+	spacer: ' > ',
+	spacerAlt: ' >'
+})
+var logger3 = makePrefixedLogger('!!!', console.error.bind(console), {
+	isEnabled: false
+})
 
-logger('Hello using version : "%s"', logger.__src)
-logger({foo: 'bar'})
+logger1('Hello using version : "%s"', logger1.__src)
+logger2('Hello again')
+logger1({foo: 'bar'})
+logger2([ 'foo', 'bar'])
+logger3('should not appear')
