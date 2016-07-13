@@ -1,7 +1,6 @@
 {
 	"compilerOptions": {
-		"noEmit": true,
-		"pretty": true,
-		"target": "es6"
+		"allowSyntheticDefaultImports": true,
+		"pretty": true
 	}
 }

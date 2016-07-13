@@ -1,8 +1,12 @@
 #!/bin/sh
 ':' //# http://sambal.org/?p=1014 ; exec `dirname $0`/node_modules/.bin/ts-node "$0" "$@"
 
+//import makePrefixedLogger from 'prefixed-log'
 import makePrefixedLogger from 'prefixed-log'
 
+console.log(makePrefixedLogger)
+
+/*
 const logger1 = makePrefixedLogger('* [foo]')
 const logger2 = makePrefixedLogger(() => `[${Date.now()}]`, {
 	spacer: ' > ',
@@ -17,3 +21,4 @@ logger2('Hello again')
 logger1({foo: 'bar'})
 logger2([ 'foo', 'bar'])
 logger3('should not appear')
+*/
