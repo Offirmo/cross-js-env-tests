@@ -1,2 +1,4 @@
 node_modules
-xxtypescript/**.js
+typescript/v1/*.js
+typescript/v2/*.js
+npm-debug.log
