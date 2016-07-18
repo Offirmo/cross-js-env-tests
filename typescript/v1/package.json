@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "tsc": "tsc"
+  },
   "devDependencies": {
     "ts-node": "^0.9.3",
     "typescript": "^1.8.10"
