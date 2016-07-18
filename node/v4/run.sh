@@ -14,7 +14,7 @@ echo "* target is $TARGET..."
 
 echo "* launching nvm run $(cat .nvmrc) $TARGET..."
 echo "~~~~~~~~~~~~~~~~~~~~~"
-nvm run $(cat .nvmrc)  $TARGET
+nvm run $(cat .nvmrc) $TARGET
 echo "~~~~~~~~~~~~~~~~~~~~~"
 echo "good bye"
 echo
