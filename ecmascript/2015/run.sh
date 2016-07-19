@@ -4,7 +4,7 @@ echo
 echo
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-echo "* `nvm use`"
+nvm use
 
 echo "* cwd = `pwd`"
 NODE_MODULES_PATH=`dirname $0`/../node_modules

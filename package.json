@@ -4,7 +4,8 @@
   "description": "A project to test some JS code amongst various JS environments",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd ecmascript && npm i && cd ../typescript/v1 && npm i && cd ../v2 && npm i"
   },
   "repository": {
     "type": "git",
