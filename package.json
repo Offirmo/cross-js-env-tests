@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "cd ecmascript && npm i && cd ../typescript/v1 && npm i && cd ../v2 && npm i"
+    "postinstall": "cd ecmascript && npm i && cd ../typescript/v1 && npm i && cd ../v2 && npm i",
+    "xx": "rm -rf node_modules ecmascript/node_modules typescript/v1/node_modules typescript/v2/node_modules"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,8 @@
   },
   "homepage": "https://github.com/Offirmo/cross-js-env-tests#readme",
   "dependencies": {
-    "hello-world-emo": "^0.1.0",
-    "prefixed-log": "^1.0.0",
+    "hello-world-emo": "^1.0.0",
+    "prefixed-log": "^1.0.1",
     "requirejs": "^2.2.0"
   },
   "devDependencies": {}
