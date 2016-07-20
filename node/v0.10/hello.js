@@ -3,5 +3,6 @@
 
 var hello = require('hello-world-emo/dist/index.node-legacy')
 
+console.log(typeof hello, hello)
 hello()
 hello('Offirmo')
