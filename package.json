@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/Offirmo/cross-js-env-tests#readme",
   "dependencies": {
-    "hello-world-emo": "^1.0.0",
+    "hello-world-emo": "^2.1.0",
     "prefixed-log": "^1.0.1",
     "requirejs": "^2.2.0"
   },
