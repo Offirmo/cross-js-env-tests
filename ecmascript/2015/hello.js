@@ -3,7 +3,7 @@
 
 import { hello, goodbye } from 'hello-world-emo'
 
-console.log(typeof hello)
+console.log(typeof hello, hello)
 hello()
 hello('Offirmo')
 goodbye('Offirmo')
