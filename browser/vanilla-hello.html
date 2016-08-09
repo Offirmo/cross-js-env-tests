@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<!-- html5_005 : html_tests micro template -->
+
+<head>
+	<meta charset="utf-8" />
+	<title>TEST</title>
+	<style type="text/css">
+		body {
+			margin: 40px;
+			font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			color: #333;
+		}
+	</style>
+</head>
+
+<h1>...</h1>
+<p>
+	TEST
+</p>
+
+<script src="../node_modules/hello-world-emo/dist/hello_world_emo.umd.js"></script>
+<script>
+	document.querySelector('h1').textContent = document.title;
+	Array.prototype.forEach.call(document.querySelectorAll('a'), function(el) {
+		el.href || (el.href = el.text);
+	});
+
+	console.log(window)
+	window.hello_world_emo.hello('Offirmo')
+	window.hello_world_emo.goodbye('Offirmo')
+</script>
